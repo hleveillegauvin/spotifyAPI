@@ -26,39 +26,38 @@ The script will prompt you to enter three things: 1) a method of identification,
 
 1) Method of authentification:
 
-	The method of authentification is indicated on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/). 
-	For researchers, we will almost exclusively use "GET."
-	Make sure that the method is written in all caps, as shown in the example.
+	The method of authentification is indicated on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/).   
+	For researchers, we will almost exclusively use "GET."  
+	Make sure that the method is written in all caps, as shown in the example.  
 
-	2) Endpoints:
+2) Endpoints:
 
-	Endpoints are used to indicate what type of information you want to retrieve. 
-	Endpoints information is available on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/)
-	Simply copy the endpoint from the website and paste it when prompted. For example: /v1/artists/{id}/top-tracks
+Endpoints are used to indicate what type of information you want to retrieve.  
+Endpoints information is available on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/)
+Simply copy the endpoint from the website and paste it when prompted. For example: /v1/artists/{id}/top-tracks  
 
-	NOTE: All endpoints should beginning with a forward slash (/). 
-	On the Spotify website, the forward slash for the "Audio Analysis for a Track" endpoint is missing. 
-	You need to manually add the forward slash at the beginning of this endpoint to access this information.
+NOTE: All endpoints should beginning with a forward slash (/).  
+On the Spotify website, the forward slash for the "Audio Analysis for a Track" endpoint is missing.  
+You need to manually add the forward slash at the beginning of this endpoint to access this information.  
 
-	3) Spotify ID
+3) Spotify ID  
 
-	IDs can be found in the Spotify app. Simply select the track, album, or artist, click share, and select URI to copy the ID.
-	This script accepts IDs in two formats: spotify:track:2Kerz9H9IejzeIpjhDJoYG OR 2Kerz9H9IejzeIpjhDJoYG
+IDs can be found in the Spotify app. Simply select the track, album, or artist, click share, and select URI to copy the ID.  
+This script accepts IDs in two formats: spotify:track:2Kerz9H9IejzeIpjhDJoYG OR 2Kerz9H9IejzeIpjhDJoYG  
 
-	NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need {user_id} and {playlist_id}.
-	At the moment, this script does not allow such queries. You can, however, do those manually in the terminal:
+NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need {user_id} and {playlist_id}.  
+At the moment, this script does not allow such queries. You can, however, do those manually in the terminal:  
 
 	curl -X <METHOD> https://api.spotify.com<ENDPOINT> -H "Authorization: Bearer <TOKEN>"
 
-	NOTE: Some endpoints require a list of IDs. This is currently supported by this script, but the list needs to be comma-separated. For example: 
-
+NOTE: Some endpoints require a list of IDs. This is currently supported by this script, but the list needs to be comma-separated. For example:   
 	2Kerz9H9IejzeIpjhDJoYG,0mt02gJ425Xjm7c3jYkOBn,3ZKRAzNAsiJrBGUM2BX9av,1Ym6aMuT5bliaZMC67AmPp,6eygbzyL6hY8jFQTARDuo9,5QqyRUZeBE04yJxsD1OC0I,03hqMhmCZiNKMSPmVabPLP,269xqcgGTN9PlivhUkOLhX,5UPHeuDP0AnG830Yf3bJJD,7nns9KjsadA1Cx7as2eGNG,0dssTLrqY79Klk6jx2RXCj,3O7p9Itz8PXUoAjD2vmuM6,6VZwnDUMkAZs36g6v9MVQX,7lSdUlVf8k6kxklKkskb1m,3fx5ozORvvTGnSnOhUqrgj,761QvVHTibYjEi2r6A4g4Q
 
-	However, the following format, while accepted for single IDs, is not supported for list of IDs:
+However, the following format, while accepted for single IDs, is not supported for list of IDs:  
 
 	spotify:track:2Kerz9H9IejzeIpjhDJoYG,spotify:track:0mt02gJ425Xjm7c3jYkOBn,spotify:track:3ZKRAzNAsiJrBGUM2BX9av,spotify:track:1Ym6aMuT5bliaZMC67AmPp,spotify:track:6eygbzyL6hY8jFQTARDuo9,spotify:track:5QqyRUZeBE04yJxsD1OC0I,spotify:track:03hqMhmCZiNKMSPmVabPLP,spotify:track:269xqcgGTN9PlivhUkOLhX,spotify:track:5UPHeuDP0AnG830Yf3bJJD,spotify:track:7nns9KjsadA1Cx7as2eGNG,spotify:track:0dssTLrqY79Klk6jx2RXCj,spotify:track:3O7p9Itz8PXUoAjD2vmuM6,spotify:track:6VZwnDUMkAZs36g6v9MVQX,spotify:track:7lSdUlVf8k6kxklKkskb1m,spotify:track:3fx5ozORvvTGnSnOhUqrgj,spotify:track:761QvVHTibYjEi2r6A4g4Q
 
-	See example 4 below for ways to generate a properly formatted list of IDs. 
+See example 4 below for ways to generate a properly formatted list of IDs. 
 
 
 ===============================================
