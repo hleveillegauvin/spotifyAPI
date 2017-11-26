@@ -1,11 +1,11 @@
 # spotifyAPI
 # README
-# ===============================================
-Script to use the Spotify API
-Required dependency: spotifyToken.php
-Written by: Hubert Léveillé Gauvin
-Date: 7 August 2017, last revised 10 August 2017
-===============================================
+	===============================================
+	Script to use the Spotify API
+	Required dependency: spotifyToken.php
+	Written by: Hubert Léveillé Gauvin
+	Date: 7 August 2017, last revised 10 August 2017
+	===============================================
 
 
 ===============================================
