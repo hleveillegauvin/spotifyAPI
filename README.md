@@ -32,13 +32,9 @@ The script will prompt you to enter three things: 1) a method of identification,
 
 2) Endpoints:
 
-Endpoints are used to indicate what type of information you want to retrieve.  
-Endpoints information is available on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/).    
-Simply copy the endpoint from the website and paste it when prompted. For example: /v1/artists/{id}/top-tracks  
+Endpoints are used to indicate what type of information you want to retrieve. Endpoints information is available on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/). Simply copy the endpoint from the website and paste it when prompted. For example: /v1/artists/{id}/top-tracks  
 
-NOTE: All endpoints should beginning with a forward slash (/).  
-On the Spotify website, the forward slash for the "Audio Analysis for a Track" endpoint is missing.  
-You need to manually add the forward slash at the beginning of this endpoint to access this information.  
+NOTE: All endpoints should beginning with a forward slash (/). On the Spotify website, the forward slash for the "Audio Analysis for a Track" endpoint is missing. You need to manually add the forward slash at the beginning of this endpoint to access this information.  
 
 3) Spotify ID:  
 
