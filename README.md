@@ -73,35 +73,42 @@ For more info about jq, visit: https://stedolan.github.io/jq/
 ## Examples
 1) Calculate the number of measures in a song: 
 
+```
 	method=GET
 	endpoint=/v1/audio-analysis/{id} 
 	ID=2vEQ9zBiwbAVXzS2SOxodY
 
 	cat lastOutput.json | jq '.bars[] | "\(.start)"' | wc -l
+```
 
 2) Get the Spotify ID for every songs on an album
 
+```
 	method=GET
 	endpoint=/v1/albums/{id}/tracks
 	ID=cat
 
 	cat lastOutput.json | jq '.items[] | "\(.uri)"'
+```
 
 3) Get the name and duration (in ms) of every songs on an album
 
+```
 	method=GET
 	endpoint=/v1/albums/{id}/tracks
 	ID=7xYiTrbTL57QO0bb4hXIKo
 
 	cat lastOutput.json | jq '.items[] | "\(.name), \(.duration_ms)"' 
+```
 
 4) Sort album tracks by ascending tempo
 
-	method=GET
+```	method=GET
 	endpoint=/v1/albums/{id}/tracks
 	ID=spotify:album:7xYiTrbTL57QO0bb4hXIKo
 
 	cat lastOutput.json | jq '.items[] | "\(.uri)"' | sed 's/\"//g' | sed 's/.*://g' | tr "\n" "," 
+```
 	
 this will give you a comma-separated list of IDs. Like this:
 
