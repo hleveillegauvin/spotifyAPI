@@ -8,7 +8,7 @@ To use the Spotify API, you first need to register on https://developer.spotify.
 Use your regular Spotify username and password to create your developper app. The app can be called anything.  
 Alternatively, you can use the Spotify Web API Console at https://developer.spotify.com/web-api/console/   
 
-  Open ```./spotifyToken.php``` and modify the file by entering your Spotify developper client ID and client secret. Once this is done, save the file.   
+  Open ```spotifyToken.php``` and modify the file by entering your Spotify developper client ID and client secret. Once this is done, save the file.   
 
 Make spotifyAPI.sh executable  
 
@@ -17,16 +17,14 @@ Make spotifyAPI.sh executable
 Make spotifyToken.PHP executable 
 
 	chmod +x ./spotifyToken.php
+	
+## Using the API for the first time:
+Every time you use this script, your client ID and client secret are used to generate a new authentification token.   
+This is done silently but can sometimes take a few seconds.  
 
-===============================================
-Using the API for the first time:
-===============================================
-	Every time you use this script, your client ID and client secret are used to generate a new authentification token. 
-	This is done silently but can sometimes take a few seconds.
+The script will prompt you to enter three things: 1) a method of identification, 2) an endpoint, and 3) a Spotify ID.  
 
-	The script will prompt you to enter three things: 1) a method of identification, 2) an endpoint, and 3) a Spotify ID.
-
-	1) Method of authentification:
+1) Method of authentification:
 
 	The method of authentification is indicated on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/). 
 	For researchers, we will almost exclusively use "GET."
