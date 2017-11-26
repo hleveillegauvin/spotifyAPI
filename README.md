@@ -1,5 +1,5 @@
 # spotifyAPI
-Script to use the Spotify API
+Script to use the Spotify API <br>
 Required dependency: spotifyToken.php
 Written by: Hubert Léveillé Gauvin
 Date: 7 August 2017, last revised 10 August 2017
