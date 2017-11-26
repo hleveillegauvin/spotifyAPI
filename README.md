@@ -1,8 +1,8 @@
 # spotifyAPI
-Script to use the Spotify API <br>
-Required dependency: spotifyToken.php
-Written by: Hubert Léveillé Gauvin
-Date: 7 August 2017, last revised 10 August 2017
+Script to use the Spotify API  
+Required dependency: spotifyToken.php  
+Written by: Hubert Léveillé Gauvin  
+Date: 7 August 2017, last revised 10 August 2017  
 ##	Getting Started:
 	To use the Spotify API, you first need to register on https://developer.spotify.com/
        	Use your regular Spotify username and password to create your developper app. The app can be called anything.
