@@ -1,5 +1,5 @@
 # spotifyAPI
-README
+# README
 ===============================================
 Script to use the Spotify API
 Required dependency: spotifyToken.php
