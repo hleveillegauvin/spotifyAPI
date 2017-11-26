@@ -27,7 +27,7 @@ The script will prompt you to enter three things: 1) a method of identification,
 1) Method of authentification:
 
 	The method of authentification is indicated on the Spotify website (https://developer.spotify.com/web-api/endpoint-reference/).   
-	For researchers, we will almost exclusively use "GET."  
+	For researchers, we will almost exclusively use ```GET```.  
 	Make sure that the method is written in all caps, as shown in the example.  
 
 2) Endpoints:
@@ -42,10 +42,9 @@ You need to manually add the forward slash at the beginning of this endpoint to 
 
 3) Spotify ID:  
 
-IDs can be found in the Spotify app. Simply select the track, album, or artist, click share, and select URI to copy the ID.  
-This script accepts IDs in two formats: spotify:track:2Kerz9H9IejzeIpjhDJoYG OR 2Kerz9H9IejzeIpjhDJoYG  
+IDs can be found in the Spotify app. Simply select the track, album, or artist, click share, and select URI to copy the ID. This script accepts IDs in two formats: ```spotify:track:2Kerz9H9IejzeIpjhDJoYG``` OR ```2Kerz9H9IejzeIpjhDJoYG```  
 
-NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need {user_id} and {playlist_id}.  
+NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need ```{user_id}``` and ```{playlist_id}```.  
 At the moment, this script does not allow such queries. You can, however, do those manually in the terminal:  
 
 	curl -X <METHOD> https://api.spotify.com<ENDPOINT> -H "Authorization: Bearer <TOKEN>"
