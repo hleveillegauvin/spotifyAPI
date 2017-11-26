@@ -44,8 +44,7 @@ You need to manually add the forward slash at the beginning of this endpoint to 
 
 IDs can be found in the Spotify app. Simply select the track, album, or artist, click share, and select URI to copy the ID. This script accepts IDs in two formats: ```spotify:track:2Kerz9H9IejzeIpjhDJoYG``` OR ```2Kerz9H9IejzeIpjhDJoYG```  
 
-NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need ```{user_id}``` and ```{playlist_id}```.  
-At the moment, this script does not allow such queries. You can, however, do those manually in the terminal:  
+NOTE: Some endpoints require two types of IDs. For example, to get a access to a user's specific playlist, one would need ```{user_id}``` and ```{playlist_id}```. At the moment, this script does not allow such queries. You can, however, do those manually in the terminal:  
 
 	curl -X <METHOD> https://api.spotify.com<ENDPOINT> -H "Authorization: Bearer <TOKEN>"
 
