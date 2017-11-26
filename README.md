@@ -8,9 +8,9 @@
 	===============================================
 
 
-===============================================
-Getting Started:
-===============================================
+	===============================================
+#	Getting Started:
+	===============================================
 	To use the Spotify API, you first need to register on https://developer.spotify.com/
        	Use your regular Spotify username and password to create your developper app. The app can be called anything.
 	Alternatively, you can use the Spotify Web API Console at https://developer.spotify.com/web-api/console/
