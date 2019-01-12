@@ -1,0 +1,43 @@
+$client_id = '<INSERT ID HERE>'; 
+$client_secret = '<INSERT CLIENT HERE'; 
+
+# Clear all Used Variables
+$url=''
+$postdata=''
+$content=''
+$auth_response=''
+$url='https://accounts.spotify.com/api/token'
+$postdata= @{client_id=$client_id;client_secret=$client_secret;grant_type='client_credentials'}
+$content='application/x-www-form-urlencoded'
+$auth_response=Invoke-RestMethod -URI $url -Method Post -Body $postdata -ContentType $content
+Write-Host $auth_response
+
+
+### EDIT BELOW
+$json = @'
+{
+    "data": {
+        "langid": 7, 
+        "results": [
+            {
+                "first_aired": "2010-11-15", 
+                 "name": "Accused", 
+                "tvdbid": 72663
+            }, 
+            {
+                "first_aired": "2010-01-17", 
+                "name": "Enzai: Falsely Accused", 
+                "tvdbid": 135881
+            }
+        ]
+    }, 
+    "message": "", 
+    "result": "success"
+}
+'@
+
+$psobj = ConvertFrom-Json $json
+$psobj.data.results.tvdbid
+
+ 72663
+ 135881
